@@ -1,0 +1,71 @@
+<!--A flashy webpage-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>
+        <marquee>Color changing boxes</marquee>
+    </h1>
+<style>
+
+    body{
+        background-image: url("backg.gif");
+        background-repeat: no-repeat;
+        background-color: #cccccc;
+    }
+   
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        -webkit-animation-name: colors; /* for safari*/
+        -webkit-animation-duration: 40s; /* for safari*/
+        animation-name: colors;
+        animation-duration: 40s;
+    }
+
+    #hShadow {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 18px red;
+    }
+
+    /* intial color*/
+    @-webkit-keyframes colors {
+        0%   {background-color: red;}
+        20%  {background-color: yellow;}
+        40%  {background-color: blue;}
+        60% {background-color: green;}
+        80% {background-color: purple;}
+        100% {background-color: grey;}
+    }
+
+    /* switching to these color in repetitions */
+    @keyframes colors {
+        0%   {background-color: red;}
+        20%  {background-color: yellow;}
+        40%  {background-color: blue;}
+        60% {background-color: green;}
+        80% {background-color: purple;}
+        100% {background-color: grey;}
+    }
+
+</style>
+
+</head>
+<body>
+
+    <p><b>Note:</b> Doesn't this look cool?</p>
+    <div></div>
+
+</body>
+<head>
+    <div id="hShadow">
+        <p> Blurred colors transitions.</p>
+    </div>
+    <h4><marquee><strong> THE END</strong></marquee></h4>
+</head>
+
+</html>
+r
+

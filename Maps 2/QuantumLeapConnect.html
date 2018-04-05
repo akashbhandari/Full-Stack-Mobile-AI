@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--CSS Styling-->
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <marquee><h3>Quantum Leap International Project</h3></marquee>
+    <div id="map"></div>
+  
+ <!--Input fields having unique IDs that are used to make request to Google Maps API--> 
+<p>Lattitude: 
+<input id="lat" type="number"  value = '42.920250'  required>
+Longitude: 
+<input id="lng" type="number"  value = '-73.239190' required>
+</p>
+<!--Defining the title-->
+<p>
+Marker title:
+<input id="title" value = "Ursula's Office">
+</p>
+<p>
+Content summary:
+<input id = "contentBlurb" value = "Oliver can be found here" size=40>
+</p>
+
+<p>
+Learn more here:
+</p>
+<p>
+Link title:
+<input id = 'essayTitle' value = "Where you can find everything" size = 30>
+Link address:
+<input id = 'essay' value = "http://www.google.com" size = 40>
+</p>
+
+<p>
+Go elsewhere title:
+<input id = 'goElseWhereTitle' value = "My friends' site: " size = 30>
+Go elsewhere address:
+<input id = 'goElseWhereLink' value = "http://www.cnn.com" size = 40>
+</p>
+
+<!--Submit button-->
+<button onclick="processInfo()">OK</button></p>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZJDPhNK1t28nbhw-1YU_oqU65n1jtN1Y&callback=initMap">
+    </script>
+
+  <!--Referencing the QuantumLeapConnet.js-->
+  <script type="text/javascript"
+  src="QuantumLeapConnect.js">
+  </script>
+
+  </body>
+</html>
